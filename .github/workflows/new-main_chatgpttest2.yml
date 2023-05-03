@@ -28,15 +28,10 @@ jobs:
           source venv/bin/activate
       
       - name: Install dependencies
-        run: python manage.py migrate 
-      
-      - name: Run Migration
-        run: python manage.py migrate
-    
-      
-      # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
-
+        run: pip install -r requirements.txt
         
+      # Optional: Add step to run tests here (PyTest, Django test suites, etc.)
+      
       - name: Upload artifact for deployment jobs
         uses: actions/upload-artifact@v2
         with:
@@ -65,4 +60,4 @@ jobs:
         with:
           app-name: 'chatgpttest2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E3EDB2B4E8CF4FACB0C27B29EFCC31D4 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_7CCD89BA0B8645C89F0B12898FF8BF02 }}
