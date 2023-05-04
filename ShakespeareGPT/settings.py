@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-%0$don$o2ne97li9hy7ddw7e)=11q!b(z8)ha$pjmstuj)3ju2'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['shakespearegpt.azurewebsites.net', 'chatgpttest2.azurewebsites.net', 'www.talktoshakespeare.com']
 
