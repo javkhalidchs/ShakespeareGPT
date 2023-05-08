@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'ShakespeareGPT.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR_ONE / 'db.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
 
@@ -116,7 +116,7 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATICFILES_DIRS = [
-    BASE_DIR_ONE / "static",
+    BASE_DIR / "static",
 ]
 
 # Default primary key field type
