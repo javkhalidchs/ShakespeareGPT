@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['shakespearegpt.azurewebsites.net', 'chatgpttest2.azurewebsites.net', 'www.talktoshakespeare.com']
 
+CSRF_TRUSTED_ORIGINS = ['https://'+ os.environ['chatgpttest2.azurewebsites.net']]
+
 OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 
 # Application definition
